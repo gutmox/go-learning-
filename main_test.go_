@@ -1,0 +1,13 @@
+package main_test
+
+import (
+	"main"
+	"testing"
+)
+
+func TestIntMinBasic(t *testing.T) {
+	shouldBe1 := main.MinOf(1, 2, 3, 5, 6)
+	if shouldBe1 != 1 {
+		t.Errorf("Mein error")
+	}
+}
